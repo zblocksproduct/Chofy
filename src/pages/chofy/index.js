@@ -82,8 +82,8 @@ export default function Chofy() {
         <div className="sm:flex justify-center mt-5 max-w-[700px] m-auto">
           <div
             onClick={() => {
-              navigate("/chofyLanding");
-              window.scrollTo(0, 0);
+              window.location.href =
+              "https://wallettest.zblocks.io?gift=41c7c0fe169c55ed434682429989&hint=google";
             }}
             className="max-w-[317px] w-[100%] cursor-pointer  m-auto h-[56px] bg-[#59341E] flex justify-center items-center rounded-full"
           >
@@ -94,8 +94,8 @@ export default function Chofy() {
           </div>
           <div
             onClick={() => {
-              navigate("/chofyLanding");
-              window.scrollTo(0, 0);
+              window.location.href =
+              "https://wallettest.zblocks.io?gift=41c7c0fe169c55ed434682429989&hint=google";
             }}
             className="max-w-[317px] w-[100%] cursor-pointer h-[56px] bg-[#59341E] flex justify-center items-center rounded-full sm:ml-6 m-auto sm:mt-0 mt-4"
           >
