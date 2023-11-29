@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import * as tga from "../../components/tga-verifier.js";
 import Footer from "../../components/footer/index";
 import Modal from "../../components/modal";
 export default function ChofyLanding() {
@@ -12,6 +12,28 @@ export default function ChofyLanding() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+async function checkTrue() {
+    if (await verify()) {
+      openModal();
+    }
+  }
+
+  async function verify() {
+    const conf = {
+      code: 'Z1699467659879931',
+      id: '23d47815-8966-4930-bcba-a7969353b42e',
+    };
+    const response = await tga.GatedVerifier.verify(conf);
+    if (response.status) {
+      // response.data.verified true means user has required NFT.
+      return response.data.verified;
+    } else {
+      console.error(response.data.errorMessage);
+      return false;
+    }
+  }
+  
   return (
     <div>
       <div>
@@ -39,7 +61,7 @@ export default function ChofyLanding() {
             Click below to access this limited-time offer:
           </p>
           <div
-            onClick={openModal}
+            onClick={checkTrue}
             className="sm:max-w-[276px] cursor-pointer max-w-[328px] text-[20px] font-semibold w-[100%] h-[56px] rounded-full text-white m-auto sm:mt-[38px] mt-[16px] bg-[#E18091] flex justify-center items-center"
           >
             Claim Your Tickets
