@@ -14,7 +14,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Chofy />} />
-          <Route path="chofyLanding" element={<ChofyLanding />} />
+          <Route path="experience" element={<ChofyLanding />} />
         </Routes>
       </Router>
     </div>
