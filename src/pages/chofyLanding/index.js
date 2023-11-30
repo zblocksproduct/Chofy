@@ -21,8 +21,8 @@ async function checkTrue() {
 
   async function verify() {
     const conf = {
-      code: 'Z1699467659879931',
-      id: '23d47815-8966-4930-bcba-a7969353b42e',
+      code: 'Z1701349962368586',
+      id: '4df7afe5-226c-4719-8574-8fcd40e0a85c',
     };
     const response = await tga.GatedVerifier.verify(conf);
     if (response.status) {
