@@ -83,7 +83,7 @@ export default function Chofy() {
           <div
             onClick={() => {
               window.location.href =
-              "https://wallet.zblocks.io?gift=e4b45fcb5d4283339a264bccbbed&hint=microsoft";
+              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=microsoft";
             }}
             className="max-w-[317px] w-[100%] cursor-pointer  m-auto h-[56px] bg-[#59341E] flex justify-center items-center rounded-full"
           >
@@ -95,7 +95,7 @@ export default function Chofy() {
           <div
             onClick={() => {
               window.location.href =
-              "https://wallet.zblocks.io?gift=e4b45fcb5d4283339a264bccbbed&hint=google";
+              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=google";
             }}
             className="max-w-[317px] w-[100%] cursor-pointer h-[56px] bg-[#59341E] flex justify-center items-center rounded-full sm:ml-6 m-auto sm:mt-0 mt-4"
           >
