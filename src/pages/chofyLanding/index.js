@@ -61,7 +61,7 @@ async function checkTrue() {
             Click below to access this limited-time offer:
           </p>
           <div
-            onClick={openModal}
+            onClick={checkTrue}
             className="sm:max-w-[276px] cursor-pointer max-w-[328px] text-[20px] font-semibold w-[100%] h-[56px] rounded-full text-white m-auto sm:mt-[38px] mt-[16px] bg-[#E18091] flex justify-center items-center"
           >
             Claim Your Tickets
