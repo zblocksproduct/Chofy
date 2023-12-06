@@ -113,7 +113,7 @@ async function checkTrue() {
         </p>
         <p className="text-center">
           {" "}
-          <span className="font-semibold text-[#0075FF]">Click here</span> to
+          <span className="font-semibold text-[#0075FF]" a href="https://zblocks.io/wp-content/uploads/2023/08/Ticket.png">Click here</span> to
           download your Tasting Tour tickets.{" "}
         </p>
         <img src="/image-4.png" alt="" className="mt-[10px] sm:block hidden" />
